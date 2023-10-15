@@ -31,7 +31,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   background-color: #F2F2F2;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
 }
 
 a {
@@ -55,15 +55,19 @@ footer {
 }
 
 .favorites {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7DB54F;
+  color: #FFFFFF;
 }
 
 .brown-button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
+}
+
+.navigation-link-button {
+  color: #FFFFFF;
 }
 
 .main-index {
@@ -71,7 +75,7 @@ footer {
 }
 
 .hero-picture {
-  background-image: url("../images/welcome.svg"), url("../images/background-bottom.svg");
+  background-image: url("../images/hero-background.jpg"), url("../images/background-bottom.svg");
   background-position: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -157,6 +161,7 @@ footer {
 }
 
 .hostels-search {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
@@ -170,7 +175,14 @@ footer {
   background-repeat: no-repeat;
 }
 
+.subscribe-input {
+  font-family: "PT Sans";
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
 .button {
+  font-family: "PT Sans";
   background-color: rgba(130, 179, 211, 1);
   font-size: 20px;
   line-height: 36px;
@@ -190,6 +202,13 @@ footer {
   text-transform: uppercase;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
+}
+
+.breadcrumbs-link {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .inner-header {
@@ -216,13 +235,38 @@ footer {
   line-height: 24px;
 }
 
-.control-input {
+.control {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
 }
 
+.price {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.price-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.select-control{
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
 .submit {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -231,10 +275,12 @@ footer {
 }
 
 .reset {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .hotel-name {
@@ -252,6 +298,7 @@ footer {
 }
 
 .to-favorites {
+  font-family: "PT Sans";
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -268,25 +315,33 @@ footer {
   background-color: rgba(242, 242, 242, 1);
 }
 
+.pagination-list{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
 .pagination-item-active {
   background-color: rgba(242, 242, 242, 1);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color:#000000;
+  text-decoration: none;
 }
 
-.pagination-item {
-  background-color: rgba(130, 179, 211, 1);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
+.pagination-item-not-active {
+  background-color: #82B3D3;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.pagination-item-three-dots{
+color: #000000;
+background-color: #F2F2F2;
+text-decoration: none;
 }
 
 .button-blue {
+  font-family: "PT Sans", sans-serif;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
@@ -296,6 +351,7 @@ footer {
 }
 
 .active-button {
+  font-family: "PT Sans", sans-serif;
   background-color: rgba(125, 181, 79, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 16px;

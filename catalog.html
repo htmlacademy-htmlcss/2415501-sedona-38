@@ -36,7 +36,7 @@
           </li>
           <li class="navigation-item">
             <div class="brown-button">
-            <a class="navigation-link" href="#">хочу сюда!</a>
+              <a class="navigation-link navigation-link-button" href="#">хочу сюда!</a>
           </div>
           </li>
         </ul>
@@ -98,14 +98,14 @@
           <fieldset class="x">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <label class="price">
-            <input type="number" id="min-hotel-price" name="min-price">От
+            <input class="price-input" type="number" id="min-hotel-price" name="min-price">От
           </label>
           <label class="price">
-            <input type="number" id="max-hotel-price" name="max-price">До
+            <input class="price-input" type="number" id="max-hotel-price" name="max-price">До
           </label>
           </fieldset>
           <button  class="button-blue" type="submit">ПРИМЕНИТЬ</button>
-          <button type="reset">СБРОСИТЬ</button>
+          <button class="reset" type="reset">СБРОСИТЬ</button>
         </form>
       </header>
       <section class="catalog">
@@ -191,26 +191,26 @@
         </div>
 
         <ul class="pagination-list">
-          <li class="pagination-item-active">
-            <a href="#">1</a>
+          <li class="pagination-item">
+            <a class="pagination-item-active" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-item-not-active" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-item-not-active" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">4</a>
+            <a class="pagination-item-not-active" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a href="#">5</a>
+            <a class="pagination-item-not-active" href="#">5</a>
           </li>
           <li class="pagination-item">
-            <a href="#">...</a>
+            <a class="pagination-item-three-dots" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a href="#">10</a>
+            <a class="pagination-item-not-active" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -220,7 +220,7 @@
         <b class="title title-subscribe">Подпишитесь на рассылку</b>
         <p class="description description-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+          <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
           <button class="button" type="submit">подписаться</button>
         </form>
       </section>
