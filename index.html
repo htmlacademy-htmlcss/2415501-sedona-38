@@ -207,6 +207,75 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-group">
+              <label class="modal-label" for="date-start-input">Дата заезда:</label>
+              <div class="date">
+                <input class="date-input field" type="text" id="date-start-input" name="date-start-input"
+                  value="27 апреля 2020" placeholder="Укажите дату" required>
+                <span class="info info-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="modal-group">
+              <label class="modal-label" for="date-finish-input">Дата выезда: </label>
+              <div class="date">
+                <input class="date-input field" type="text" id="date-finish-input" name="date-finish-input"
+                  value="1 сентября 2021" placeholder="Укажите дату" required>
+                <span class="info">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="age">
+              <div class="modal-group">
+                <label class="modal-label modal-age" for="adult-input">Взрослые:</label>
+                <button class="less button-grey" type="button">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
+                    </svg>
+                </button>
+                <input class="auth-form-field field" type="number" id="adult-input" name="adult-input" value="2"
+                  max="20" required>
+                <button class="more button-grey" type="button">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                    </svg>
+                </button>
+              </div>
+              <div class="modal-group">
+                <span class="form-label">
+                <label class="modal-label modal-age" for="children-input">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+                <button class="less button-grey" type="button">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
+                    </svg>
+                </button>
+                <input class="auth-form-field field" type="text" id="children-input" name="children-input" value="2"
+                  max="20" required>
+                <button class="more button-grey" type="button">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"  />
+                    </svg>
+                </button>
+              </div>
+            </div>
+            <button class="button-blue modal-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 
