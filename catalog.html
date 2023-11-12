@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" sizes="32×32" type="image/png" href="images/favicon.png" >
   </head>
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header" >
         <div class="page-header-container">
           <a class="logotype">
             <img class="header-logotype" src="images/logo.svg" width="140" height="70" alt="Логотип">
@@ -45,7 +46,7 @@
           </nav>
         </div>
       </header>
-      <main class="main-inner main-container">
+      <main class="main-inner main-container" data-test="main">
         <header class="inner-header">
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -118,6 +119,7 @@
               </fieldset>
               <fieldset class="price-catalog">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="price-size">
                 <label class="price">
                   <input class="price-input" type="number" id="min-hotel-price" name="min-price" value="0">
                   <span class="control-range">от</span>
@@ -126,12 +128,13 @@
                   <input class="price-input max-price-input" type="number" id="max-hotel-price" name="max-price" value="9000">
                   <span class="control-range">до</span>
                 </label>
+                </div>
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -149,9 +152,9 @@
             <h2 class="visually-hidden">Каталог</h2>
             <b class="title">Найдено гостиниц: 38</b>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="cards-view">
               <li class="card-view">
@@ -287,7 +290,7 @@
         <section class="subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <b class="title title-subscribe">Подпишитесь на рассылку</b>
-          <p class="description description-subscribe">Только полезная информация и никакого спама, честное
+          <p class="description description-subscribe">Только полезная информация и никакого спама,<br> честное
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
