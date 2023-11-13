@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" sizes="32×32" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <div class="page-header-container">
-          <a class="logotype">
+          <a class="logotype" href="index.html">
             <img class="header-logotype" src="images/logo.svg" width="140" height="70" alt="Логотип">
           </a>
           <nav class="navigation">
@@ -162,17 +162,17 @@
             </select>
             <ul class="cards-view">
               <li class="card-view">
-                <button class="view view-cards view-cards-active" type="button" class="cards-view-type">
+                <button class="view view-cards view-cards-active" type="button">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
               <li class="card-view">
-                <button class="view view-slides" type="button" class="cards-view-type">
+                <button class="view view-slides" type="button">
                   <span class="visually-hidden">Показать слайд</span>
                 </button>
               </li>
               <li class="card-view">
-                <button class="view view-list" type="button" class="cards-view-type">
+                <button class="view view-list" type="button">
                   <span class="visually-hidden">Показать список</span>
                 </button>
               </li>
@@ -298,7 +298,7 @@
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="button-blue submit-button-blue" type="submit">подписаться</button>
           </form>
         </section>
