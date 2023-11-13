@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" sizes="32×32" type="image/png" href="images/favicon.png" >
+    <link rel="icon" type="image/png" href="images/favicon.png" >
   </head>
 
   <body>
@@ -39,7 +39,7 @@
                 </a>
                 <span class="favorites">12</span>
               </li>
-              <li class="navigation-item navigation-item-user-button">
+              <li class="navigation-item-user-button">
                 <a class="brown-button brown-button-header" href="#">хочу сюда!</a>
               </li>
             </ul>
@@ -52,11 +52,9 @@
             <h1 class="visually-hidden">Cедона</h1>
             <div class="hero-picture">
               <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
-              <img class="hero-img-bottom" src="images/background-bottom.svg" width="1200" height="57"
-                alt="Добро пожаловать в Седону">
             </div>
             <div class="hero-description">
-              <b class="title">Седона — небольшой городок в&nbspАризоне, заслуживающий большего!</b>
+              <b class="title">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</b>
               <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
           </section>
@@ -130,7 +128,7 @@
               бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
-                placeholder="Ваш e-mail">
+                placeholder="Ваш e-mail" required>
               <button class="button-blue submit-button-blue" type="submit">подписаться</button>
             </form>
           </section>
@@ -212,6 +210,10 @@
         <div class="modal modal-auth">
           <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
           <button class="modal-close-button" type="button">
+            <svg class="close-button" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
+            </svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
