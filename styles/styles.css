@@ -391,9 +391,6 @@ img{
   height: 52px;
   background-color: #F2F2F2;
   border-radius: 50%;
-  background-image: url('../images/close.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   border: 3px solid  #F2F2F2;
   cursor: pointer;
 }
@@ -404,11 +401,16 @@ img{
 
 .modal-close-button:hover {
   background-color: #E6E6E6;
+  border: #E6E6E6;
 }
 
 .modal-close-button:active {
   background-color: #E6E6E6;
-  opacity: 0.3;
+  border: #E6E6E6;
+}
+
+.modal-close-button:active + .close-button:active{
+  fill-opacity: 0.3;
 }
 
 
@@ -693,6 +695,10 @@ padding: 112px 85px;
   margin: 20px 0 54px 0;
 }
 
+.search b{
+  width: 297px;
+}
+
 .hotels-search {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -705,7 +711,7 @@ padding: 112px 85px;
 
 .subscribe-basic {
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -750,6 +756,7 @@ padding: 112px 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -858,7 +865,7 @@ padding: 112px 85px;
 .inner-header {
   background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
   padding: 35px 70px 65px 70px;
 }
@@ -1073,6 +1080,7 @@ padding: 112px 85px;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   margin-left: auto;
   padding: 14px 20px;
@@ -1281,6 +1289,8 @@ border: 2px solid rgba(0, 0, 0, 0.30);
   border-radius: 4px;
   padding: 8px 22px;
   margin: 0;
+  width: 140px;
+  box-sizing: border-box;
 }
 
 /*Pagination*/
@@ -1362,8 +1372,10 @@ border: 2px solid rgba(0, 0, 0, 0.30);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  width: 150px;
 }
 
 .footer-contacts-phone {
@@ -1481,6 +1493,7 @@ border: 2px solid rgba(0, 0, 0, 0.30);
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
+  color: #000;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -1506,12 +1519,30 @@ border: 2px solid rgba(0, 0, 0, 0.30);
   background-repeat: no-repeat;
 }
 
+.date-input:default{
+  color: #000000;
+  opacity: 0.6;
+  background-image: url("../images/calendar.svg");
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+}
+
+.date-input:hover{
+  background: #E6E6E6;
+  color: #000000;
+  opacity: 0.6;
+  background-image: url("../images/calendar.svg");
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+}
+
 .modal-label {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  color: #000000;
   text-transform: capitalize;
   margin-right: auto;
   text-align: center;

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" sizes="32×32" type="image/png" href="images/favicon.png" >
+    <link rel="icon" sizes="32×32" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -39,14 +39,14 @@
                 </a>
                 <span class="favorites">12</span>
               </li>
-              <li class="navigation-item navigation-item-user-button">
+              <li class="navigation-item-user-button">
                 <a class="brown-button brown-button-header" href="#">хочу сюда!</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <main class="main-index main-container"  data-test="main">
+      <main class="main-index main-container" data-test="main">
         <div class="page-main-container">
           <section class="hero" data-test="hero">
             <h1 class="visually-hidden">Cедона</h1>
@@ -56,7 +56,7 @@
                 alt="Добро пожаловать в Седону">
             </div>
             <div class="hero-description">
-              <b class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+              <b class="title">Седона — небольшой городок в&nbspАризоне, заслуживающий большего!</b>
               <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
           </section>
@@ -107,7 +107,8 @@
               </li>
               <li class="service-item">
                 <h3 class="service-title food">Еда</h3>
-                <p class="service-description"> Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!
+                <p class="service-description"> Всегда заказывайте <br>топовый фирменный бургер,<br> вы не
+                  разочаруетесь!
                 </p>
               </li>
               <li class="service-item service-item-light-grey">
@@ -212,6 +213,11 @@
         <div class="modal modal-auth">
           <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
           <button class="modal-close-button" type="button">
+            <svg class="close-button" width="15" height="15" viewBox="0 0 15 15" fill="none" fill-opacity="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector"
+                d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+                fill="black" fill-opacity="1"/>
+            </svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -235,41 +241,48 @@
               <div class="modal-group">
                 <label class="modal-label modal-age" for="adult-input">Взрослые:</label>
                 <button class="less button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
-                    </svg>
+                  </svg>
                 </button>
                 <input class="auth-form-field field" type="number" id="adult-input" name="adult-input" value="2"
                   max="20" required>
                 <button class="more button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
-                    </svg>
+                  </svg>
                 </button>
               </div>
               <div class="modal-group">
                 <span class="form-label form-label-children">
-                <label class="modal-label modal-age" for="children-input">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                  <svg class="tooltip-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"/>
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</span>
-                </span>
+                  <label class="modal-label modal-age" for="children-input">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br>
+                      которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются
+                      бесплатно.</span>
+                  </span>
                 </span>
                 <button class="less button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
-                    </svg>
+                  </svg>
                 </button>
                 <input class="auth-form-field field" type="number" id="children-input" name="children-input" value="2"
                   max="20" required>
                 <button class="more button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"  />
-                    </svg>
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
                 </button>
               </div>
             </div>
