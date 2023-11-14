@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" sizes="32x32">
   </head>
 
   <body>
@@ -13,7 +13,7 @@
       <header class="page-header" data-test="header">
         <div class="page-header-container">
           <a class="logotype">
-            <img class="header-logotype" src="images/logo.svg" width="140" height="70" alt="Логотип">
+            <img class="header-logotype" src="images/logo.svg" width="140" height="70" alt="Логотип.">
           </a>
           <nav class="navigation">
             <ul class="navigation-list navigation-menu">
@@ -46,12 +46,12 @@
           </nav>
         </div>
       </header>
-      <main class="main-index main-container" data-test="main">
+      <main class="main-index main-container"  data-test="main">
         <div class="page-main-container">
           <section class="hero" data-test="hero">
             <h1 class="visually-hidden">Cедона</h1>
             <div class="hero-picture">
-              <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+              <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
             </div>
             <div class="hero-description">
               <b class="title">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</b>
@@ -67,7 +67,7 @@
                   <p class="advanteges-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div>
-                  <img class="sedona-city" src="images/sedona-city.jpg" width="800" height="385" alt="Город Седона">
+                  <img class="sedona-city" src="images/sedona-city.jpg" width="800" height="385" alt="Город Седона.">
                 </div>
               </li>
               <li class="advantages-item advantages-item-light-grey">
@@ -88,7 +88,7 @@
                   <p class="advanteges-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
                 <img class="sedona-canyon" src="images/sedona-canyon.jpg" width="800" height="385"
-                  alt="Каньон в Седоне">
+                  alt="Каньон в Седоне.">
               </li>
             </ul>
           </section>
@@ -105,8 +105,7 @@
               </li>
               <li class="service-item">
                 <h3 class="service-title food">Еда</h3>
-                <p class="service-description"> Всегда заказывайте <br>топовый фирменный бургер,<br> вы не
-                  разочаруетесь!
+                <p class="service-description"> Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!
                 </p>
               </li>
               <li class="service-item service-item-light-grey">
@@ -115,27 +114,28 @@
               </li>
             </ul>
           </section>
-          <section class="hotels">
+          <section class="search" data-test="search">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
             <b class="title">Заинтересовались?</b>
             <p class="description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
               в Седоне</p>
             <button class="hotels-search brown-button" type="button">поиск гостиницы в Седоне</button>
           </section>
-          <section class="subscribe subscribe-basic">
+          <section class="subscribe subscribe-basic" data-test="subscribe">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <b class="title title-subscribe">Подпишитесь на рассылку</b>
             <p class="description description-subscribe">Только полезная информация и никакого спама,<br> честное
               бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" id="subscribe-email">Подписка на рассылку</label>
               <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
-                placeholder="Ваш e-mail">
+                placeholder="Ваш e-mail" required>
               <button class="button-blue submit-button-blue" type="submit">подписаться</button>
             </form>
           </section>
         </div>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer-container">
           <ul class="footer-list">
             <li class="footer-item">
@@ -207,7 +207,7 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container" data-test="modal">
+      <div class="modal-container">
         <div class="modal modal-auth">
           <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
           <button class="modal-close-button" type="button">
@@ -238,48 +238,41 @@
               <div class="modal-group">
                 <label class="modal-label modal-age" for="adult-input">Взрослые:</label>
                 <button class="less button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
-                  </svg>
+                    </svg>
                 </button>
                 <input class="auth-form-field field" type="number" id="adult-input" name="adult-input" value="2"
                   max="20" required>
                 <button class="more button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
-                  </svg>
+                    </svg>
                 </button>
               </div>
               <div class="modal-group">
                 <span class="form-label form-label-children">
-                  <label class="modal-label modal-age" for="children-input">Дети:</label>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" />
-                      </svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br>
-                      которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются
-                      бесплатно.</span>
-                  </span>
+                <label class="modal-label modal-age" for="children-input">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</span>
+                </span>
                 </span>
                 <button class="less button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z" />
-                  </svg>
+                    </svg>
                 </button>
                 <input class="auth-form-field field" type="number" id="children-input" name="children-input" value="2"
                   max="20" required>
                 <button class="more button-grey" type="button">
-                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
-                  </svg>
+                  <svg class="button-grey-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"  />
+                    </svg>
                 </button>
               </div>
             </div>
